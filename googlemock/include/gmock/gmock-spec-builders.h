@@ -1278,7 +1278,7 @@ class MockSpec {
     const std::string source_text(std::string("EXPECT_CALL(") + obj + ", " +
                                   call + ")");
     LogWithLocation(internal::kInfo, file, line, source_text + " invoked");
-    return function_mocker_->AddNewExpectation(file, line, source_text,
+    return function_mocker_->AddNewExpectation(file, line, source_text,  // NOLINT
                                                matchers_);
   }
 
